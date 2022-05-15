@@ -2,6 +2,8 @@
 import _ from 'lodash';
 import './style.css';
 import beluga from './beluga.jpg';
+import Data from './sample.xml';
+import Notes from './sample.csv';
 
 function component() {
     const element = document.createElement('div');
@@ -13,6 +15,9 @@ function component() {
     const myIcon = new Image();
     myIcon.src = beluga;
     element.appendChild(myIcon);
+
+    console.log(Data);
+    console.log(Notes);
      
     return element;
   }
